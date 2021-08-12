@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>WebSocket客户端</title>
+    <script type="text/javascript">
+        var ws_client;
+        ws_client = new WebSocket("ws://127.0.0.1:9000/");
+        ws_client.onopen = function () {           // 握手成功回调函数
+            print('--- 握手成功！')
+        };
+        ws_client.onmessage = function (e) {       // 接收消息回调函数
+            print("<<< 收到消息: " + e.data);
+        };
+        ws_client.onerror = function(e) {          // 运行错误回调函数
+            print(e.value);
+        };
+        function send_msg() {                      // 发送消息
+            print("------------------")
+            var msg = document.getElementById("input");
+            ws_client.send(msg.value);
+            print(">>> 发送消息：" + msg.value);
+            msg.value = "";
+            msg.focus();
+        }
+        function print(str) {                      // 输出消息
+            var info = document.getElementById("info");
+            info.innerHTML = str + "<br>" + info.innerHTML;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="send_msg()">发送消息</button>
+    <div id="info"></div>
+</body>
+</html>

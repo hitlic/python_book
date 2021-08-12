@@ -1,0 +1,4 @@
+- 例12-1：www/server.py
+- 例12-2：www/cgi-bin/first_cgi.py
+- 例12-3：www/cgi-bin/post_0.py
+- 例12-4：www/cgi-bin/post_1.py

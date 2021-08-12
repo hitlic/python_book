@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Python编程</title>
+  <style>
+    .continer {
+      margin: 0 auto;
+      width: 80%;
+    }
+    .box {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="continer">
+    <div class="box">
+      <h1>课后作业提交</h1>
+      <form action="/" method="post" accept-charset="utf-8">
+        <div>
+          <span>学号：</span>
+          <input type="text" name="usertag" style="width: 20%;"/>
+          <span style="width: 5%; display:inline-block"></span>
+          <span>密码：</span>
+          <input type="password" name="password" style="width: 20%;"/>
+        </div><br>
+        <div>
+          <textarea name="code" id="codebox"
+            style="width:100%;overflow-y:scroll;overflow:scroll;"
+            rows="10" wrap="off">代码拷到这里！</textarea>
+        </div><br>
+        <div style="margin: 0 auto; text-align: center;">
+          <input type="submit" value="提交代码" 
+             style="width:100px; line-height:99px;display:inline-block"/>
+        </div>
+      </form>
+    </div>
+    <div><span id="info"/></div>
+  </div>
+</body>
+</html>
