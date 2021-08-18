@@ -24,7 +24,7 @@
   - 使用conda
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
 
-###使用幻灯片显示
+### 使用幻灯片显示
 
 - 安装Jupyter和autopep8
   - 使用pip：`pip install jupyter autopep8`
