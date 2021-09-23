@@ -52,7 +52,7 @@
 - 在弹出的浏览器中选择一个课件打开，点击下图所示的图标即可以幻灯片形式显示
 
   <center>
-      <img src="rise.png" width="60%"/>
+      <img src="rise.png" width="65%"/>
   </center>
 
   
