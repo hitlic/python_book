@@ -41,3 +41,10 @@
   - 使用conda
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
 
+- 点击下图所示的图标，即可以幻灯片形式显示
+
+  <center>
+      <img src="rise.png" width="60%"/>
+  </center>
+
+  
