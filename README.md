@@ -23,6 +23,9 @@
     - `jupyter nbextensions_configurator enable --user`
   - 使用conda
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
+- 运行jupyter notebook
+  - 在终端进入课件所在目录
+  - 运行命令`jupyter notebook .`即可
 
 ### 使用幻灯片显示
 
@@ -41,7 +44,12 @@
   - 使用conda
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
 
-- 点击下图所示的图标，即可以幻灯片形式显示
+- 运行jupyter notebook
+
+  - 在终端进入课件所在目录
+  - 运行命令`jupyter notebook .`
+
+- 在弹出的浏览器中选择一个课件打开，点击下图所示的图标即可以幻灯片形式显示
 
   <center>
       <img src="rise.png" width="60%"/>
