@@ -1,9 +1,9 @@
 from socket import socket, AF_INET, SOCK_DGRAM
-from socket import SOL_SOCKET, SO_REUSEPORT
+from socket import SOL_SOCKET, SO_REUSEADDR
 from datetime import datetime
 
 server_socket = socket(AF_INET, SOCK_DGRAM)              # 创建套接字
-server_socket.setsockopt(SOL_SOCKET, SO_REUSEPORT, 1)    # 端口重用
+server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)    # 端口重用
 server_socket.bind(('127.0.0.1', 9000))                  # 绑定地址
 print('UDP服务器启动，等待客户端数据 ...')
 

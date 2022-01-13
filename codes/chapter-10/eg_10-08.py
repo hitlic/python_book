@@ -1,5 +1,5 @@
 from socket import socket, AF_INET, SOCK_STREAM
-from socket import SOL_SOCKET, SO_REUSEPORT
+from socket import SOL_SOCKET, SO_REUSEADDR
 from datetime import datetime
 from concurrent.futures import ProcessPoolExecutor
 
@@ -19,8 +19,8 @@ def service_task(conn, addr):
 
 
 def main():
-    server_socket = socket(AF_INET, SOCK_STREAM)          # 创建套接字对象
-    server_socket.setsockopt(SOL_SOCKET, SO_REUSEPORT, 1)  # 端口重用
+    server_socket = socket(AF_INET, SOCK_STREAM)        # 创建套接字对象
+    server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)  # 端口重用
     server_socket.bind(('127.0.0.1', 9000))               # 绑定地址
     server_socket.listen()
     print('TCP服务器启动，监听之中... ...')

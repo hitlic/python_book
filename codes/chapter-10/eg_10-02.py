@@ -1,7 +1,7 @@
 from socket import socket, AF_INET, SOCK_STREAM
 from datetime import datetime
 
-tcp_socket = socket.socket(AF_INET, SOCK_STREAM)      # 创建套接字
+tcp_socket = socket(AF_INET, SOCK_STREAM)    # 创建套接字
 tcp_socket.connect(('127.0.0.1', 9000))               # 发起连接请求
 while True:
     data_send = input('> ')

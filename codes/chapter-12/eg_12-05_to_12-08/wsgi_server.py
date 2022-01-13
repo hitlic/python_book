@@ -1,6 +1,6 @@
 # 文件 wsgi_server.py
 from socket import socket, AF_INET, SOCK_STREAM
-from socket import SOL_SOCKET, SO_REUSEPORT
+from socket import SOL_SOCKET, SO_REUSEADDR
 from httplib import Parser
 import threading, sys, io
 
@@ -14,7 +14,7 @@ class WSGIServer:
 
     def start(self):
         server_socket = socket(AF_INET, SOCK_STREAM)
-        server_socket.setsockopt(SOL_SOCKET, SO_REUSEPORT, 1)
+        server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
         print(f"启动服务器，http://{self.host}:{self.port}")
         server_socket.bind((self.host, self.port))
         server_socket.listen(10)
