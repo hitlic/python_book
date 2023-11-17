@@ -15,8 +15,8 @@
 ### 仅使用Notebook显示
 
 - 安装Jupyter和autopep8
-  - 使用pip：`pip install jupyter autopep8`
-  - 使用conda：`conda install jupyter autopep8`
+  - 使用pip：`pip install jupyter==6.5.6 autopep8`
+  - 使用conda：`conda install jupyter==6.5.6 autopep8`
 - 为了配置方便，建议安装Jupyter Nbextensions Configurator
   - 使用pip
     - `pip install jupyter_nbextensions_configurator`
@@ -30,8 +30,8 @@
 ### 使用幻灯片显示
 
 - 安装Jupyter和autopep8
-  - 使用pip：`pip install jupyter autopep8`
-  - 使用conda：`conda install jupyter autopep8`
+  - 使用pip：`pip install jupyter==6.5.6 autopep8`
+  - 使用conda：`conda install jupyter==6.5.6 autopep8`
 
 - 安装RISE插件
   - 使用pip：`pip install RISE`
