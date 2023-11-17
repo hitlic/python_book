@@ -15,13 +15,13 @@
 ### 仅使用Notebook显示
 
 - 安装Jupyter和autopep8
-  - 使用pip：`pip install jupyter==6.5.6 autopep8`
-  - 使用conda：`conda install jupyter==6.5.6 autopep8`
+  - 使用pip：`pip install jupyter==6.4.8`
+  - 使用conda：`conda install jupyter==6.4.8 autopep8`
 - 为了配置方便，建议安装Jupyter Nbextensions Configurator
   - 使用pip
     - `pip install jupyter_nbextensions_configurator`
     - `jupyter nbextensions_configurator enable --user`
-  - 使用conda
+  - __使用conda__
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
 - 运行jupyter notebook
   - 在终端进入课件所在目录
@@ -30,18 +30,19 @@
 ### 使用幻灯片显示
 
 - 安装Jupyter和autopep8
-  - 使用pip：`pip install jupyter==6.5.6 autopep8`
-  - 使用conda：`conda install jupyter==6.5.6 autopep8`
+  - 使用pip：`pip install jupyter==6.4.8`
+  - 使用conda：`conda install jupyter==6.4.8`
 
 - 安装RISE插件
   - 使用pip：`pip install RISE`
 
   - 使用conda：`conda install -c conda-forge rise`
+  
 - 为了配置方便，建议安装Jupyter Nbextensions Configurator
   - 使用pip
     - `pip install jupyter_nbextensions_configurator`
     - `jupyter nbextensions_configurator enable --user`
-  - 使用conda
+  - __使用conda__
     - `conda install -c conda-forge jupyter_nbextensions_configurator`
 
 - 运行jupyter notebook
@@ -54,5 +55,3 @@
   <center>
       <img src="rise.png" width="65%"/>
   </center>
-
-  
