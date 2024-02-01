@@ -19,10 +19,10 @@
   - 使用conda：`conda install jupyter==6.4.8 autopep8`
 - 为了配置方便，建议安装Jupyter Nbextensions Configurator
   - 使用pip
-    - `pip install jupyter_nbextensions_configurator`
+    - `pip install jupyter_nbextensions_configurator==0.4.1`
     - `jupyter nbextensions_configurator enable --user`
   - __使用conda__
-    - `conda install -c conda-forge jupyter_nbextensions_configurator`
+    - `conda install -c conda-forge jupyter_nbextensions_configurator==0.4.1`
 - 运行jupyter notebook
   - 在终端进入课件所在目录
   - 运行命令`jupyter notebook .`即可
@@ -40,10 +40,10 @@
   
 - 为了配置方便，建议安装Jupyter Nbextensions Configurator
   - 使用pip
-    - `pip install jupyter_nbextensions_configurator`
+    - `pip install jupyter_nbextensions_configurator==0.4.1`
     - `jupyter nbextensions_configurator enable --user`
   - __使用conda__
-    - `conda install -c conda-forge jupyter_nbextensions_configurator`
+    - `conda install -c conda-forge jupyter_nbextensions_configurator==0.4.1`
 
 - 运行jupyter notebook
 
