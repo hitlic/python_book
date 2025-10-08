@@ -1,4 +1,5 @@
 # Python编程从入门到提高
+
 清华大学出版社《Python编程从入门到提高》源代码及课件。
 
 ## 内容
@@ -22,7 +23,9 @@
   - 运行命令`jupyter notebook .`即可
 
 ### 使用幻灯片显示
+
 - 由于幻灯片使用了基于 notebook<7.0 的RISE插件，可按如下方式安装所需工具包的正确版本。
+
   ```bash
   # 1. 创建新的python环境，并激活启动（3.8-3.12都可以）
   # 2. 安装兼容的 Jupyter Notebook 核心组件
@@ -39,11 +42,9 @@
   jupyter contrib nbextension install --sys-prefix
   jupyter nbextension enable toc2/main --sys-prefix
   ```
+
 - 运行jupyter notebook
   - 在终端进入课件所在目录
   - 运行命令`jupyter notebook .`
 - 在弹出的浏览器中选择一个课件打开，点击下图所示的图标即可以幻灯片形式显示
-
-  <center>
-      <img src="rise.png" width="65%"/>
-  </center>
+  ![幻灯片示意图](rise.png)
